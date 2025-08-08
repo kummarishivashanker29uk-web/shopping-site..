@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1f1f2e;
+  color: #f0e9e9;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: white;
+}
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  background-color: #2a2a40;
+  border-radius: 12px;
+  padding: 1rem 2rem 2rem;
+  box-shadow: 0 0 15px #2575fcaa;
+}
+h2 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #fcfcfd;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.9px;
+}
+.products {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product {
+  background: #3c3c57;
+  border-radius: 16px;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 0 8px #6a11cb44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px #2575fcaa;
+}
+.product img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.product h3 {
+  margin: 0.3rem 0 0.8rem;
+  font-weight: 700;
+  color: #d8d8f7;
+  text-align: center;
+}
+.product p.price {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #a6c9ff;
+  margin: 0 0 1rem;
+}
+.product button {
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+.product button.save-btn {
+  background-color: #2575fc;
+}
+.product button:hover {
+  background-color: #480e94;
+}
+.product button.save-btn:hover {
+  background-color: #1a52c7;
+}
+#cart-section {
+  background: #161621;
+  margin-top: 2rem;
+  border-radius: 14px;
+  padding: 1rem 1.6rem;
+  box-shadow: 0 0 18px #6a11cbaa;
+  color: #cdd5fa;
+}
+#cart-section h3 {
+  margin: 0 0 1rem;
+  letter-spacing: 0.8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #a2aaff;
+  text-align: center;
+}
+#cart-list {
+  list-style-type: none;
+  padding-left: 0;
+  max

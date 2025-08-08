@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Premium Tee Shop</title>
+  <!-- Link the CSS file here -->
+  <link rel="stylesheet" href="shiva.css" />
+    <link rel="stylesheet" href="shiva.js" />
+</head>
+<body>
+  <header>
+    Premium Tee Shop - Quality & Color You Deserve
+  </header>
+  <main>
+    <h2>Our Premium T-Shirts Collection</h2>
+    <section class="products">
+      <div class="product" data-name="Royal Blue Tee" data-price="29.99">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=300&q=80" alt="Royal Blue Tee" />
+        <h3>Royal Blue Tee</h3>
+        <p class="price">$29.99</p>
+        <button class="add-btn">Add to Cart</button>
+        <button class="save-btn">Save</button>
+      </div>
+      <div class="product" data-name="Crimson Red Tee" data-price="34.99">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=300&q=80" alt="Crimson Red Tee" />
+        <h3>Crimson Red Tee</h3>
+        <p class="price">$34.99</p>
+        <button class="add-btn">Add to Cart</button>
+        <button class="save-btn">Save</button>
+      </div>
+      <div class="product" data-name="Emerald Green Tee" data-price="31.99">
+        <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=300&q=80" alt="Emerald Green Tee" />
+        <h3>Emerald Green Tee</h3>
+        <p class="price">$31.99</p>
+        <button class="add-btn">Add to Cart</button>
+        <button class="save-btn">Save</button>
+      </div>
+    </section>
+    <section id="cart-section">
+      <h3>Your Cart</h3>
+      <ul id="cart-list"></ul>
+      <div id="cart-total">Total: $0.00</div>
+      <button id="checkout-btn">Proceed to Payment</button>
+    </section>
+    <section id="payment-form">
+      <h3>Payment Details</h3>
+      <form id="pay-form">
+        <input type="text" id="name" placeholder="Name on Card" required />
+        <input type="text" id="card-number" placeholder="Card Number" pattern="\d{13,16}" title="13 to 16 digit card number" required />
+        <input type="text" id="expiry" placeholder="Expiry MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" title="MM/YY format" required />
+        <input type="text" id="cvv" placeholder="CVV" pattern="\d{3,4}" title="3 or 4 digit CVV" required />
+        <button type="submit">Pay Now</button>
+      </form>
+      <div id="message"></div>
+    </section>
+  </main>
+
+  <!-- Link the JavaScript file here -->
+  <script src="script.js"></script>
+</body>
+</html>
